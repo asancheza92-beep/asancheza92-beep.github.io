@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio JavaScript</title>
+  <style>
+    body {
+        transition: background-color 0.5s, color 0.5s;
+        background-color: white; 
+        color: black;
+    }
+
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+
+    .luna, .sol {
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .luna {
+        background-color: #2c3e50;
+        color: white;
+    }
+
+    .sol {
+        background-color: #f1c40f;
+        color: black;
+    }
+</style>
+</head>
+<body>
+    <h1>Ejercicio JavaScript</h1>
+  <button onclick="document.getElementById('saludo').textContent='adios'">
+Si pulsas te digo adios
+  </button>
+<p id="saludo"></p>
+<!-- Abajo hay imágenes 3 imágenes con los respectivos botones-->
+    <p>Buenos días</p>
+   <img id="feliz" src="./IMG/feliz.png" alt="Imagen" width="200">
+
+  <button onclick="document.getElementById('despedida').textContent='hola'">
+  Si pulsas aqui te digo hola
+  </button>
+<p id="despedida"></p>
+
+  <button onclick="document.getElementById('feliz').src='./IMG/feliz.png'">
+  Feliz
+  </button>
+
+  <button onclick="document.getElementById('feliz').src='./IMG/triste.png'">
+  Triste
+  </button>
+  <button onclick="document.getElementById('feliz').src='./IMG/enfadado.png'">
+  Enfadado
+  </button>
+
+  <button id="sol" class="sol">☀️
+  </button>
+
+  <button id="luna" class="luna">🌙
+  </button>
+
+<script>
+  const botonSol = document.getElementById('sol');
+  const botonLuna = document.getElementById('luna');
+  const body = document.body;
+
+  botonSol.style.display = 'none'; 
+  botonLuna.style.display = 'inline-block'; 
+  
+  botonLuna.onclick = function() {
+    body.classList.add('dark-mode'); 
+    botonLuna.style.display = 'none';
+    botonSol.style.display = 'inline-block'; 
+  };
+
+  botonSol.onclick = function() {
+    body.classList.remove('dark-mode'); 
+    botonSol.style.display = 'none';
+    botonLuna.style.display = 'inline-block'; 
+  };
+</script>
+<img id="arbol" src="./IMG/arbol.jpg" alt="Árbol">
+
+<button id="toggleArbol">Mostrar/Ocultar árbol</button>
+
+<script>
+  const arbol = document.getElementById('arbol');
+  const boton = document.getElementById('toggleArbol');
+
+  boton.onclick = function() {
+    if (arbol.style.display === 'none' || arbol.style.display === '') {
+      arbol.style.display = 'block';  
+    } 
+    else {
+      arbol.style.display = 'none'; 
+    }
+  };
+</script>
+
+<p>El DOM es <h1> la herramienta que le permite a JavaScript acceder </h1>y modificar el contenido, la estructura y el estilo de una página web. Es el "puente" entre el código JavaScript y el documento HTML/CSS.</p>
+
+<p>JavaScript es un lenguaje de programación de alto nivel e interpretado que te permite crear contenido de actualización dinámica en páginas web.</p>
+&lt;<!DOCTYPE html>&gt;
+<html>
+&lt;<head>&gt;
+ &lt; <meta charset="UTF-8">
+ &lt; <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ &lt; <title>Document</title>
+&lt;</head>&gt;
+&lt;<body>&gt;
+
+&lt;</body>&gt;
+&lt;</html>&gt;
+
+
+<button onclick="document.getElementsByTagName('p')[0].style.color='blue';
+                 document.getElementsByTagName('p')[0].style.Size='15px';
+                 document.getElementsByTagName('p')[0].style.fontWeight='bold';
+               ">
+  Aplicar Estilos
+</button>
+
+">
+</button>
+</body>
+</html>
