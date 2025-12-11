@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="Description" content="repaso del HEAD y los estilos en cascada">
+<meta name="Keywords" content="HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Python">
+<meta property="og:title" content="Villanueva de la Serena">
+<meta property="og:description" content="Ayuntamiento de Villanueva de la Serena">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.whatsapp.com/?lang=es/">
+<meta property="og:image" content="src/img/logo.webp">
+<title>Villanueva de la Serena</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    color: #333333;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.div1, .div2, .div3, .div4, .footer {
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #cccccc;
+}
+
+.div1 {
+    background-color: #004d99;
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1 img {
+    margin-top: 5px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.div2 {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.div2 a {
+    color: #004d99;
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 6px 12px;
+    font-weight: bold;
+    border-radius: 3px;
+    background-color: #e9e9e9;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.div2 a:hover {
+    color: white;
+    background-color: #0077cc;
+    transform: translateY(-1px);
+}
+
+.main-content-wrapper {
+    display: flex;
+    gap: 15px;
+    margin: 25px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.div3 {
+    background-color: white;
+    width: 25%;
+    min-height: 320px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.div3 strong {
+    font-size: 19px;
+    color: #004d99;
+    display: block;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.div3 a {
+    display: block;
+    background-color: transparent;
+    margin: 6px 0;
+    color: #333333;
+    font-size: 16px;
+    padding: 5px;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.div3 a:hover {
+    background-color: #004d99;
+    color: white;
+    padding-left: 10px;
+}
+
+.div4 {
+    background-color: white;
+    flex-grow: 1;
+    min-height: 320px;
+    padding: 20px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+summary {
+    font-size: 21px;
+    font-weight: bold;
+    color: #004d99;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 3px 0;
+    border-left: 3px solid #004d99;
+    padding-left: 8px;
+}
+
+.footer {
+    background-color: #004d99;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    clear: both;
+    margin-top: 25px;
+}
+
+.footer img {
+    margin-top: 5px;
+}
+
+.redes-sociales {
+    padding-top: 10px;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    color: white;
+    background-color: #0066cc;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: background-color 0.2s;
+}
+
+.redes-sociales a:hover {
+    background-color: #0099ff;
+    transform: translateY(-1px);
+}
+
+.redes-sociales a.facebook,
+.redes-sociales a.twitter,
+.redes-sociales a.instagram,
+.redes-sociales a.youtube,
+.redes-sociales a.whatsapp,
+.redes-sociales a.linkedin {
+    background-color: #0066cc;
+}
+</style>
+</head>
+
+<body>
+
+<div class="div1">
+    Villanueva de la Serena
+    <br>
+   <img src="./src/img/logo_Alberto.jpg" width="50">
+</div>
+
+<div class="div2">
+    <a href="./src/bolitas.html">Ejercicio bolitas</a>
+    <a href="./src/ejer1.html">Ejercicio 1 de div</a>
+    <a href="./src/ejer2.html">Ejercicio 2 de div</a>
+    <a href="./src/Etiquetastexto.html">Etiquetas de texto</a>
+    <a href="./src/anchors.html">Anchors</a>
+    <a href="./src/head.html">head</a>
+    <a href="./src/Posiciones.html">Posiciones</a>
+    <a href="./src/estilosenlinea.html">Estilos en línea</a>
+    <a href="./src/Parrafos.html">Párrafos</a>
+    <a href="./src/usemap.html">Usemap</a>
+    <a href="./src/formularios.html">Formularios</a>
+</div>
+
+<div class="main-content-wrapper">
+    
+    <div class="div3">
+        <strong style="font-size: 20px;">Enlaces</strong>
+        
+        <a href="https://www.google.com/maps/">Google Maps</a>
+        <a href="https://translate.google.com">Traductor</a>
+        <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a>
+    </div>
+
+    <div class="div4">
+        
+        <details>
+            <summary>Qué es un DHCP</summary>
+            <p>El protocolo de configuración dinámica de host
+            (DHCP, Dynamic Host Configuration Protocol),es un
+            estándar TCP/IP que simplifica la administración de
+            la configuración IP haciéndola automática.
+            El servidor DHCP recibe peticiones de clientes
+            solicitando una configuración de red IP. Responde
+            proporcionando los parámetros que permitan a los
+            clientes autoconfigurarse. Los clientes hay que
+            configurarlo seleccionando la opción “Obtener
+            dirección IP automáticamente”.</p>
+        </details>
+
+        <details>
+            <summary>Conceptos DHCP</summary>
+            <p>
+            Ámbito servidor DHCP: agrupamiento de equipos.<br>
+            Rango: direcciones que se pueden asignar.<br>
+            Ejemplo: 192.168.0.1 a 192.168.0.254
+            </p>
+        </details>
+        
+        </div>
+    
+</div> 
+
+
+<footer class="footer">
+    <p>2025 Villanueva de la Serena Índice</p>
+    <p>Hecho por: Alberto Sánchez</p>
+    <img src="./src/img/logo_Alberto.jpg" width="50">
+    
+    <div class="redes-sociales">
+        <a href="https://www.facebook.com/" target="_blank" class="facebook" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.twitter.com/" target="_blank" class="twitter" title="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" class="instagram" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" class="youtube" title="YouTube">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://wa.me/" target="_blank" class="whatsapp" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" class="linkedin" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>

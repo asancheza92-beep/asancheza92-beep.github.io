@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML5 Completo de Referencia</title>
+    <style>
+
+
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    padding: 30px;
+    background-color: #f8f9fa; /* Fondo muy claro */
+    color: #333;
+}
+
+
+form div { 
+    margin-bottom: 20px; 
+}
+
+/* 3. Etiquetas: Claras y separadas del campo */
+label { 
+    display: block; 
+    margin-bottom: 6px; 
+    font-weight: 600; /* Semi-negrita */
+    color: #34495e; /* Color oscuro sutil */
+}
+
+/* 4. Estilo de los campos de entrada, textarea y select */
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="reset"]):not([type="button"]), 
+textarea, 
+select {
+    width: 100%;
+    padding: 10px; /* Padding cómodo */
+    box-sizing: border-box; 
+    border: 1px solid #ced4da; /* Borde gris claro */
+    border-radius: 4px; 
+    transition: border-color 0.2s; /* Transición suave */
+}
+
+
+input:focus, 
+textarea:focus, 
+select:focus {
+    border-color: #007bff;
+    outline: none; 
+    box-shadow: 3px rgba(0, 123, 255, 0.1);
+}
+
+
+fieldset { 
+    border: 1px solid #e9ecef; 
+    padding: 20px; 
+    margin-bottom: 30px; 
+    border-radius: 6px; 
+}
+
+legend { 
+    font-weight: 700; 
+    padding: 0 10px; 
+    color: #007bff; 
+    font-size: 1.1px;
+}
+
+
+button, input[type="submit"], input[type="reset"], input[type="button"], 
+.saludo-button {
+    padding: 10px 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: #007bff; 
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.boton-inicio {
+    display: inline-block;
+    padding: 10px 18px;
+    margin: 20px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.boton-inicio:hover {
+    background-color: #0056b3;
+}
+    </style>
+</head>
+<body>
+    <a href="../../index.html" class="boton-inicio">Ir a Inicio</a>
+<form id="contact"> </form>
+    <h1>Formularios 1</h1>
+    
+    <form action="#" method="get">
+        
+        <fieldset>
+            <legend>Entrada de Texto y Datos Comunes</legend>
+
+            <div>
+                <label for="text_input">Texto Simple </label>
+                <input type="text" id="text_input" name="text_input" placeholder="Nombre completo">
+            </div>
+
+            <div>
+                <label for="password_input">Contraseña </label>
+                <input type="password" id="password_input" name="password_input" placeholder="Ingresa tu contraseña">
+            </div>
+
+            <div>
+                <label for="email_input">Correo Electrónico (type="email")</label>
+                <input type="email" id="email_input" name="email_input" placeholder="ejemplo@dominio.com" required>
+            </div>
+            
+            <div>
+                <label for="tel_input">Teléfono (type="tel")</label>
+                <input type="tel" id="tel_input" name="tel_input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Formato: 123-456-7890">
+            </div>
+
+            <div>
+                <label for="url_input">URL (type="url")</label>
+                <input type="url" id="url_input" name="url_input" placeholder="https://www.ejemplo.com">
+            </div>
+
+            <div>
+                <label for="search_input">Búsqueda (type="search")</label>
+                <input type="search" id="search_input" name="search_input" placeholder="Término de búsqueda...">
+            </div>
+
+            <div>
+                <label for="textarea_input">Área de Texto (textarea)</label>
+                <textarea id="textarea_input" name="textarea_input" rows="4" placeholder="Escribe un comentario largo aquí..."></textarea>
+            </div>
+            
+        </fieldset>
+        
+        <fieldset>
+            <legend>Entrada Numérica y de Rango</legend>
+
+            <div>
+                <label for="number_input">Número (type="number")</label>
+                <input type="number" id="number_input" name="number_input" min="1" max="100" step="1" value="50">
+            </div>
+
+            <div>
+                <label for="range_input">Rango (type="range")</label>
+                <input type="range" id="range_input" name="range_input" min="0" max="10" step="0.5" value="5">
+            </div>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Fecha, Hora y Color</legend>
+
+            <div>
+                <label for="date_input">Fecha </label>
+                <input type="date" id="date_input" name="date_input">
+            </div>
+            
+            <div>
+                <label for="time_input">Hora </label>
+                <input type="time" id="time_input" name="time_input">
+            </div>
+
+            <div>
+                <label for="datetime_local_input">Fecha y Hora Local )</label>
+                <input type="datetime-local" id="datetime_local_input" name="datetime_local_input">
+            </div>
+
+            <div>
+                <label for="month_input">Mes </label>
+                <input type="month" id="month_input" name="month_input">
+            </div>
+            
+            <div>
+                <label for="week_input">Semana </label>
+                <input type="week" id="week_input" name="week_input">
+            </div>
+
+            <div>
+                <label for="color_input">Color</label>
+                <input type="color" id="color_input" name="color_input" value="#0056b3">
+            </div>
+            
+        </fieldset>
+        
+        <fieldset>
+            <legend>Opciones, Archivos y Listas</legend>
+
+            <div>
+                <label for="checkbox_input">Casilla de Verificación </label>
+                <input type="checkbox" id="checkbox_input" name="checkbox_input" value="aceptado"> Acepto los términos
+            </div>
+            
+            <div>
+                <label>Botones de Radio</label>
+                <input type="radio" id="radio1" name="radio_group" value="opcion1" checked> <label for="radio1" style="display:inline;">Opción 1</label><br>
+                <input type="radio" id="radio2" name="radio_group" value="opcion2"> <label for="radio2" style="display:inline;">Opción 2</label>
+            </div>
+
+            <div>
+                <label for="file_input">Subir Archivo</label>
+                <input type="file" id="file_input" name="file_input" accept=".pdf, image/*">
+            </div>
+            
+            <div>
+                <label for="select_input">Lista Desplegable </label>
+                <select id="select_input" name="select_input">
+                    <optgroup label="Frutas">
+                        <option value="manzana">Manzana</option>
+                        <option value="banana">Banana</option>
+                    </optgroup>
+                    <option value="pera">Pera</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="datalist_input">Campo con Sugerencias </label>
+                <input list="browsers" name="datalist_input" id="datalist_input" placeholder="Elige o escribe...">
+                <datalist id="browsers">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                    <option value="Edge">
+                    <option value="Safari">
+                </datalist>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Campos Ocultos y Acciones</legend>
+
+            <input type="hidden" name="user_id" value="12345">
+            <p style="font-style: italic;"></p>
+
+            <div>
+                <button type="submit">Enviar Formulario </button>
+            </div>
+            
+            <div>
+                <input type="reset" value="Restablecer Campos ">
+            </div>
+            
+        
+            
+            </fieldset>
+        
+    </form>
+<button onclick="window.alert('Hola Buenos días Marisol')">saludo</button>
+            </div>
+            
+  <button onclick="document.write('Confirma esto?')">Confirmación</button>   
+  <button onclick="console.log('Mensaje en la consola')">Guardar información</button>
+  <script>
+    const form=document.getElementById('contact');
+    form.addEventListener('submit',function(event){
+        event.preventDefault();
+
+     
+const valorFormulario = Formularios.value; 
+const valorGonza = gonzalitoyalbertito.value;
+
+
+        console.log('Nombre:', nombre);
+        console.log('Email:', email);   });
+  </script>
+        
+    
+</body>
+</html>
